@@ -5,6 +5,7 @@ describe('DataDriven test using Cypress fixtures', () => {
     before('Login to Application', () => {
         cy.visit("./")
        
+        //getting data from fixture folder
         cy.fixture('eauser').as('userData')
     })
 
